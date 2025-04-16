@@ -1,17 +1,13 @@
 {
     "compilerOptions": {
-        "outDir": "./dist",           // კომპილირებული ფაილები განთავსდება dist მაპში
-        "lib": ["es6", "dom"],        // გამოიყენება ES6 ბიბლიოთეკა და DOM
-        "esModuleInterop": true,      // სამუშაოსთვის CommonJS მოდულების გამოყენება ES6 სინტაქსისთან
-        "target": "ES6",              // კომპილაცია ES6-ის სტანდარტამდე
-        "module": "ES6",              // ES6 მოდულის სტილი
-        "strict": true,               // შესაძლებლობა მოითხოვოს სრული ტაიპის შესწავლა
-        "skipLibCheck": true          // ბიბლიოთეკების ტაიპების შემოწმების გამოტოვება
+      "target": "ESNext",
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "skipLibCheck": true
     },
-    "include": [
-        "src/**/*"                    // აღწერილია ფაილები, რომლებიც უნდა შემოწმდეს კომპილაციის დროს
-    ],
-    "exclude": [
-        "node_modules"                // გამოტოვება node_modules-ის დირექტორიის
-    ]
-}
+    "include": ["src"]
+  }
+  

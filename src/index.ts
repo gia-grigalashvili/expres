@@ -11,7 +11,15 @@
 //     console.log("Server is listening on port 3001");
 // });
 
-const app = require("./server");
+import app from "./server";
 app.listen(3001, () => {
   console.log("server is running on port http://localhost:3001");
 });
+
+// import app from "./server";
+
+// const port = 3001;
+
+// app.listen(port, () => {
+//   console.log(`Server is running on http://localhost:${port}`);
+// });
