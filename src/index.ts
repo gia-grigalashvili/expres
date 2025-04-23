@@ -10,8 +10,10 @@
 // server.listen(3001, () => {
 //     console.log("Server is listening on port 3001");
 // });
-
+import * as dotenv from "dotenv";
 import app from "./server";
+
+dotenv.config();
 app.listen(3001, () => {
   console.log("server is running on port http://localhost:3001");
 });
